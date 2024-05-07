@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Yadav - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+    background-image: url('image/pxfuel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+        .section-bg {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-bg {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .text-primary {
+            color: #3b82f6;
+        }
+
+        .text-secondary {
+            color: #6b7280;
+        }
+
+        .text-light {
+            color: #ffffff;
+        }
+
+        .text-dark {
+            color: #000000;
+        }
+
+        .hover-bg-primary:hover {
+            background-color: #3b82f6;
+        }
+
+        .hover-bg-secondary:hover {
+            background-color: #6b7280;
+        }
+
+        .hover-text-primary:hover {
+            color: #3b82f6;
+        }
+
+        .hover-text-secondary:hover {
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-black py-4 rounded-lg">
+        <div class="container mx-auto flex justify-between items-center" style="max-width: sm;">
+            <img src="image/pf.png" alt="Logo" class="w-16 h-16 ml-3">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-yellow-500">Abhishek Yadav</h1>
+                <p class="text-2xl text-yellow-500">Front End Developer</p>
+            </div>
+            <div></div> <!-- This empty div is for spacing, you can adjust its width if needed -->
+        </div>
+    </header>
+    
+    
+    
+
+    <main class="container mx-auto mt-8">
+
+        <!-- Experience Section -->
+        <section id="experience" class="px-4 py-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="experience-item cursor-pointer" style="cursor: pointer;" onclick="scrollToFrontendDeveloper()">
+                    <h3 class="text-xl font-bold mb-2">Frontend Web Developer</h3>
+                    <p class="text-red-500 font-bold mb-4">SequelOne Solutions Pvt Ltd. (2022 - 2024)</p>
+                    <!-- Include other experience details here -->
+                    <ul class="text-yellow-500 list-disc pl-6">
+                        <li>Programming Languages: Java (proficient), HTML5, CSS3, JavaScript</li>
+                        <li>Front-End Technologies: React.js, Next.js</li>
+                        <li>Web Development Frameworks: Bootstrap</li>
+                        <li> State Management: React Context API</li>
+                        <li> Web Development: HTML5, CSS3, Responsive Design</li>
+                        <li>Web APIs: Fetch API</li>
+                        <li>IDEs and Tools: Eclipse,Visual Studio Code.</li>
+                        <li>Web Services: RESTful APIs, JSON, XML</li>
+                        <li>Front-End Libraries: jQuery, Bootstrap, AngularJS</li>
+                        <li>Responsive Design: Media queries, CSS Grid, Flexbox</li>
+                        <li>Version Control Systems: Git, GitHub, GitLab</li>
+                        <li>CMS (Content Management Systems): Strapi</li>
+                        <li>User Interface (UI) Design: Wireframing, Prototyping, User Experience (UX)</li>
+                        <li>Performance Optimization: Code optimization, caching techniques, minimizing page load time</li>
+                        <li>Agile Development: Scrum, JIRA.</li>
+                        <li>Software Development Life Cycle (SDLC): Requirements gathering, Design, Development, Testing, Deployment</li>
+                        <li>Problem Solving: Analytical thinking, Troubleshooting, Bug fixing</li>
+                        <li>DB: Mongodb, sql, s3</li>
+                    </ul>
+                </div>
+                <div class="experience-item cursor-pointer" style="cursor: pointer;" onclick="scrollToSupportSpecialist()">
+                    <h3 class="text-xl font-bold mb-2">Digital Support Specialist</h3>
+                    <p class="text-red-500 font-bold mb-4">SequelOne Solutions Pvt Ltd. (2021 - 2022)</p>
+                    <!-- Include other experience details here -->
+                    <ul class="text-yellow-500 list-disc pl-6">
+                        <li>Customer support: resolve customer technical queries</li>
+                        <li>Postman: use GET and POST for API handling.</li>
+                        <li>AWS cloud services, monitoring</li>
+                        <li>Studio3t,mongodb,sql,s3</li>
+                        <!-- Add other points here -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            function scrollToSupportSpecialist() {
+                const supportSpecialistSection = document.getElementById('experience');
+                supportSpecialistSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        
+            function scrollToFrontendDeveloper() {
+                const frontendDeveloperSection = document.getElementById('experience');
+                frontendDeveloperSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+        
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-bg px-4 py-8 mt-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-item cursor-pointer bg-white shadow rounded-lg p-6" style="cursor: pointer;" onclick="scrollToMaxlifeWebsite()">
+                    <h3 class="text-2xl font-bold mb-2">Maxlife Website: Support Specialist</h3>
+                    <p class="text-red-500 font-bold mb-4">SequelOne Solutions Pvt Ltd.</p>
+                    <!-- Include other project details here -->
+                    <ul class="text-yellow-500 list-disc pl-6">
+                        <li>I streamline communication and problem resolution. With Studio3T and SQL, I 
+                            efficiently manage and analyze data, ensuring accurate responses to customer 
+                            inquiries. Utilizing AWS CloudWatch, I proactively monitor and troubleshoot 
+                            digital services, ensuring seamless operations. By leveraging these tools, I 
+                            provide exceptional customer service, optimize support workflows, and 
+                            contribute to the success of digital support teams.</li>
+                        <!-- Add other project details here -->
+                    </ul>
+                </div>
+                <div class="project-item cursor-pointer bg-white shadow rounded-lg p-6" style="cursor: pointer;" onclick="scrollToCoaid()">
+                    <h3 class="text-2xl font-bold mb-2">Coaid: Frontend Developer</h3>
+                    <p class="text-red-500 font-bold mb-4">Maxlife Insurance</p>
+                    <!-- Include other project details here -->
+                    <ul class="text-yellow-500 list-disc pl-6">
+                        <li>Maxlife Insurance's COAID project revolutionizes the document submission 
+                            process by leveraging email communication, backend integration, and a robust 
+                            database stored in AWS S3. Through streamlined document submission and 
+                            efficient data management, COAID ensures a hassle-free experience for 
+                            customers. The incorporation of a questionnaire round based on customer data 
+                            and document analysis enhances the verification process, further reinforcing 
+                            the project's commitment to delivering exceptional customer service.</li>
+                            <li> key points:</li>
+                            <li> 1. Enhanced customer verification</li>
+                                <li> 2. Efficient data management</li>
+                                    <li>3. Efficient questionnaire round</li>
+                        <!-- Add other project details here -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            function scrollToMaxlifeWebsite() {
+                const maxlifeWebsiteSection = document.getElementById('projects');
+                maxlifeWebsiteSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        
+            function scrollToCoaid() {
+                const coaidSection = document.getElementById('projects');
+                coaidSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+        
+
+        <section id="contact" class="section-bg px-4 py-8 mt-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Contact</h2>
+            <ul class="list-disc pl-4">
+                <li class="text-yellow-500 font-bold mb-2">Phone: +91 8813071006</li>
+                <li class="text-yellow-500 font-bold mb-2">Email: abhishekydv42@gmail.com</li>
+                <li class="text-yellow-500 font-bold mb-2">LinkedIn: <a href="yourlinkedinprofilelink" class="text-primary hover:text-secondary">Abhishek Yadav</a></li>
+            </ul>
+        </section>
+        
+
+        <section id="education" class="section-bg px-4 py-8 mt-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Education</h2>
+            <p class="text-yellow-500 font-bold mb-2">B.Tech, CBSE, Kurukshetra University (2021)</p>
+        </section>
+        
+
+        <section id="expertise" class="section-bg px-4 py-8 mt-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Expertise</h2>
+            <ul class="list-disc pl-4">
+                <li class="text-yellow-500 font-bold mb-2">Java</li>
+                <li class="text-yellow-500 font-bold mb-2">HTML</li>
+                <li class="text-yellow-500 font-bold mb-2">Visual Design</li>
+                <li class="text-yellow-500 font-bold mb-2">Storyboards</li>
+                <li class="text-yellow-500 font-bold mb-2">User Flows</li>
+                <li class="text-yellow-500 font-bold mb-2">Process Flows</li>
+            </ul>
+        </section>
+        
+
+        <section id="languages" class="section-bg px-4 py-8 mt-8 rounded-lg" style="background-color: rgba(255, 255, 0, 0.3);">
+            <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Languages</h2>
+            <ul class="list-disc pl-4">
+                <li class="text-yellow-500 font-bold mb-2">English</li>
+                <li class="text-yellow-500 font-bold mb-2">Hindi</li>
+            </ul>
+        </section>
+        
+
+    <footer class="footer-bg text-light py-4 text-center">
+        <p>&copy; 2024 Abhishek Yadav</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle dark mode
+        const toggleDarkMode = document.getElementById('toggleDarkMode');
+        const body = document.body;
+
+        toggleDarkMode.addEventListener('change', () => {
+            if (toggleDarkMode.checked) {
+                body.classList.add('dark');
+            } else {
+                body.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+
+</html>
